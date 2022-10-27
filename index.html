@@ -28,6 +28,11 @@
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
+      
+      logEvent(analytics, 'select_content', {
+        content_type: 'image',
+        content_id: 'P12453'
+      });
   </script>
   </head>
   <body>
