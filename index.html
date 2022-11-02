@@ -24,6 +24,10 @@
         const analytics = getAnalytics(app);
 
         logEvent(analytics, 'logon');
+        
+        function UnityLogEvent() {
+            logEvent(analytics, 'logonfromunity');
+        }
     </script>
 </head>
   <body>
