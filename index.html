@@ -1,36 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Cook It Yourself Demo</title>
+    <title>Unity WebGL Player | CookItYourself</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
-        import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyCPBdCqteBL0e7iPvb-TGSRWbBYMnu7Rhc",
-            authDomain: "cookityourself-83e22.firebaseapp.com",
-            projectId: "cookityourself-83e22",
-            storageBucket: "cookityourself-83e22.appspot.com",
-            messagingSenderId: "1000385154143",
-            appId: "1:1000385154143:web:adda904939c202d2989fea",
-            measurementId: "G-CNX9HES0MR"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-
-        logEvent(analytics, 'logon');
-        
-        function UnityLogEvent() {
-            logEvent(analytics, 'logonfromunity');
-            console.log('UnityLogEvent');
-        }
-    </script>
-</head>
+  </head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=405 height=720></canvas>
@@ -119,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "720px";
-        canvas.style.height = "1280px";
+        canvas.style.width = "405px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
